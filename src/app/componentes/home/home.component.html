@@ -1,0 +1,30 @@
+<div class="jumbotron jumbotron-fluid">
+    <div class="container">
+        <h1 class="display-3">Fluid jumbo heading</h1>
+        <p class="lead">Jumbo helper text</p>
+        <hr class="my-2">
+        <p>More info</p>
+        <p class="lead">
+            <a class="btn btn-primary btn-lg" routerLink="/about" role="button">About</a>
+        </p>
+    </div>
+    <div class="container">
+        <h2>Ejercicio escribir</h2>
+        <input type="text" [(ngModel)]="variable">
+        <h5>{{variable}}</h5><br><br>
+
+        <h2>Ejercicio suma de numeros</h2>
+
+        <input type="number" [(ngModel)]="num1">
+        <input type="number" [(ngModel)]="num2">
+        <h5>la suma es: {{num1+num2}}</h5>
+
+        <br><br>
+        <h2>Ejercicio array nombres</h2>
+        <ul>
+            <li *ngFor="let usuario of usuarios">{{usuario.nombre + " " + usuario.apellido}}</li>
+
+        </ul>
+
+    </div>
+</div>
